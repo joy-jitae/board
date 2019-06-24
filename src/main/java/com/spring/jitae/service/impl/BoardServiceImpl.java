@@ -1,15 +1,12 @@
 package com.spring.jitae.service.impl;
 
-import java.util.List;
-
 import com.spring.jitae.dao.BoardDao;
 import com.spring.jitae.service.BoardService;
 import com.spring.jitae.vo.BoardVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import com.spring.jitae.dao.BoardDAO_temp;
+import java.util.List;
 
 @Service("boardService")
 public class BoardServiceImpl implements BoardService {

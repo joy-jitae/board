@@ -24,7 +24,7 @@
             register_date,
             update_date
         ) VALUES (
-            1,
+            (select nvl(max(board_no)+1,1) from board),
             #{title},
             #{content},
             #{writer},

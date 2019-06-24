@@ -5,9 +5,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Home</title>
 	<script>
+		window.addEventListener('load', function(){
+            var result = new Array();
+            <c:forEach var="item" items="${list}">
+            var obj = new Object();
+            obj.boardNo="item.board_no"
+            result.push(obj);
+            </c:forEach>
+
+            alert(JSON.stringify(result));
+		});
+
 	</script>
+	<title>Home</title>
 </head>
 <body>
 	<h1>Board List</h1>
